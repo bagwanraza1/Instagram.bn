@@ -1,0 +1,734 @@
+
+  @media only screen and (max-width: 700px) {
+        .all-container .left-container{
+	        display:none;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .all-container .left-container{
+            display:none;
+        }
+      }
+    
+
+*{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: "Verdana";
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*------------------------------*/
+
+#User-icon{
+    border-radius: 50%;
+}
+
+#Instagram-Name-Black{
+    position: relative;
+    left: 15px;
+    top: 40px;
+    margin-bottom: 20px;
+}
+
+#Instagram-Name-Black:active{
+    transform: scale(0.999);
+    opacity: 60%;
+}
+
+#href-links{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+#insta-spance-12{
+    margin-top: 0px;
+}
+
+#active-page{
+    font-weight: bold;
+}
+
+.login-button{
+    width: 85%;
+    border-radius: 3px;
+    border: 0;
+    color: #fff;
+    background-color: rgba(0, 175, 249);
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#msg-caunt{
+background-color: #FF0000;
+width: 15px;
+text-align: center;
+border-radius: 50px;
+position: fixed;
+top: 43.4%;
+left: 1.8%;
+color: #ffff;
+font-family: 'Courier New', Courier, monospace;
+border: #ffff 0.5px solid;
+}
+
+#noti-caunt{
+background-color: #FF0000;
+width: 6px;
+height: 6px;
+text-align: center;
+border-radius: 50px;
+position: fixed;
+top: 50.5%;
+left: 2.1%;
+border: #ffff 0.5px solid;
+}
+
+    
+
+
+/*------------------------------*/
+
+.all-container{
+    color:#000;
+}
+
+.all-container .left-container{
+    position: fixed;
+    color: #000;
+    width: 14.8%;
+    height: 100vh;
+    border-right: rgb(219, 219, 219) 1px solid;
+    z-index: 999;
+    background-color: #ffff;
+}
+
+.all-container .left-container .head-icon{
+    background-color: transparent;
+    height: 15vh;
+}
+
+
+.all-container .left-container .left-main-content{
+    color: #000;
+    padding-left: 7px;
+    padding-top: 0px;
+    width: 80;
+    position: relative;
+    top: 10px;
+}
+
+.all-container .left-container .left-main-content li{
+    color: #000;
+    list-style: none;
+    padding: 11px 10px;
+    width: 85%;
+    border-radius: 5px;
+    height:20px;
+}
+
+.all-container .left-container .left-main-content li:hover{
+    background-color: #1111;
+    
+}
+
+.all-container .left-container .left-main-content li:active{
+    opacity: 80%;
+}
+
+.all-container .left-container .left-main-content li img{
+    width: 17px;
+}
+
+.all-container .left-container .left-main-content li:hover img{
+    transform: scale(1.08);
+}
+
+/*--------ID TO HOVER CHANGING------------*/
+.all-container .left-container .left-main-content li #home-icon{
+	transform:scale(1.2);
+}
+<!--
+	
+.all-container .left-container .left-main-content li #home-icon:hover{
+	transform:scale(1.2);
+}
+-->
+
+.all-container .left-container .left-main-content li #msg-icon{
+    transform: scale(1.2);
+}
+
+.all-container .left-container .left-main-content li:hover #home-icon, #msg-icon{
+    transform: scale(1.3);
+}
+
+.all-container .left-container .left-main-content li #heart-icon{
+    transform: scale(1.3);
+}
+
+.all-container .left-container .left-main-content li:hover #heart-icon{
+    transform: scale(1.4);
+}
+
+.all-container .left-container .left-main-content li #create-icon{
+    transform: scale(2);
+}
+
+.all-container .left-container .left-main-content li:hover #create-icon{
+    transform: scale(2.1);
+}
+
+/*----------------------------------------*/
+
+.all-container .left-container .left-main-content li:active img{
+    transform: scale(0.99);
+    opacity: 80%;
+}
+
+.all-container .left-container .left-main-content li span{
+    padding-left: 10px;
+    font-size: 12px;
+    position: relative;
+    bottom: 3px;
+}
+
+.all-container .left-container .left-main-content li #active-page{
+    font-weight: bold;
+}
+
+/*------------Hide---Show---------------------------*/
+
+.all-container .left-container .left-main-content #Serach-container,
+    #Notification-Container{
+    color:#000;
+    position: absolute;
+    top: -110px;
+    left: 50px;
+    z-index: 40;
+    width: 170%;
+    height: 102vh;
+    border-radius: 0 20px 20px 0;
+    border: rgb(219, 219, 219) 1px solid;
+    border-left: 0;
+    padding-left: 10px;
+    background-color: #ffff;
+    box-shadow: 5px 0px 7px rgb(219, 219, 219);
+    transition: all 1s ease-in-out;
+    transform: translateX(0px);
+    animation: Serach_Container 1s linear calc(1);
+}
+
+    @keyframes Serach_Container {
+        from{
+            transform: translateX(-4px);
+
+        }
+        
+    }
+
+#Serach-container .head {
+    border-bottom: rgb(219, 219, 219) 1px solid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#Serach-container .head h4{
+    color: #000;
+    padding: 30px 0px 20px 0;
+    position: relative;
+    bottom: 7px;
+}
+
+#Serach-container .head input{
+    width: 95%;
+    background-color: #11111110;
+    border: rgba(219, 219, 219, 0.606) 0.1px solid;
+    padding: 7px;
+    padding-left: 30px;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+#Serach-container .head i{
+    position: fixed;
+    top: 77px;
+    left: 40px;
+}
+
+#Serach-container .main{
+    margin-top: 15px;
+} 
+
+#Serach-container .main span{
+    margin: 15px 0 15px 0;
+    font-size: 11px;
+}
+
+#Serach-container .main{
+    color: #000;
+}
+
+#Serach-container .main #Clear-all{
+    color: rgb(36, 36, 255);
+    padding-right: 20px;
+
+}
+
+#Serach-container .main #Clear-all:hover{
+    color: #000;
+}
+
+#Serach-container .main .option-profile{
+    margin-top: 2px;
+    display: flex;
+    font-size: 11px;
+    text-align:start;
+    height: 12%;
+    padding: 5px;
+}
+
+#Serach-container .main .option-profile:hover{
+    background-color: #1111;
+
+}
+
+#Serach-container .main .option-profile img{
+    width: 24.2%;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+#Serach-container .main .option-profile .content{
+    float: right;
+}
+
+#Serach-container .main .option-profile .content p{
+   position: relative;
+   left: 10px;
+   top: 5px;
+}
+
+/*-------------------*/
+
+#Notification-Container{
+    height: 95vh;
+   
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+
+/*-------------------*/
+
+#More-Container{
+    background-color: #ffff;
+    box-shadow: rgb(219, 219, 219) 1px 0px 5px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -48px;
+    width: 35vh;
+    height: 52vh;
+    padding: 2px;
+}
+#More-Container .head{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#More-Container .main{
+    border: #1111 0px solid;
+}
+
+#More-Container span{
+    font-size: 11px;
+}
+
+/*-------------------*/
+
+.container-account-switch {
+    z-index: 1200;
+    position: fixed;
+}
+
+.container-account-switch ,.container-log-out{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.618);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.container-account-switch #switch-accounts ,#log-out{
+    position: fixed;
+    top: 0;
+    left: 90vh;
+    width: 55vh;
+    height: 29.90vh;
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    border: rgb(219, 219, 219) 0px solid;
+    border-radius: 15px;
+    opacity: 100%;
+    transform: translateY(200px);
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.container-account-switch #switch-accounts .head{
+    border-bottom: rgb(219, 219, 219) 1px solid;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.container-account-switch #switch-accounts .head span{
+    font-size: 13px;
+}
+
+.container-account-switch #switch-accounts .head .cancel{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+.container-account-switch #switch-accounts .main{
+    display: block;
+    margin: 0 0px 0 0px;
+}
+
+.container-account-switch #switch-accounts .main .content{
+    background-color: transparent;
+    height: 12vh;
+    width: 100%;
+    position: relative;
+    top: -10px;
+    font-size: 14px;
+}
+
+.container-account-switch #switch-accounts .main .content:hover{
+    background-color: #00000009;
+
+}
+
+.container-account-switch #switch-accounts .main .content #text{
+    position: relative;
+    top: -30px;
+    left: 15px;
+
+}
+.container-account-switch #switch-accounts .main .content #text i{
+    position: absolute;
+    right: -110px;
+    top: 5px;
+}
+
+#accounts-img{
+    border-radius: 50%;
+}
+
+/**----------------------------------**/
+
+.container-log-out{
+    z-index: 9999;
+}
+
+#log-out{
+    height: 22vh;
+    position: fixed;
+    
+}
+
+#log-out .head{
+    height: 15vh;
+    text-align: center;
+    margin-top:11px;
+    border-bottom: #dbdbdb 1px solid;
+    background-color: transparent;
+}
+
+#log-out .head span{
+    transform: translateY(20PX);
+
+}
+
+#log-out .head #log-back-in{
+    font-size: 11px;
+    color:grey;
+}
+#log-out .main{
+    background-color: transparent;
+    border-radius: 0 0 5px  5px;
+}
+
+#log-out .main button{
+    width: 100%;
+    height: 5.5vh;
+    border-radius: 0px 0 5px 5PX;
+    border: 0;
+    outline: 0;
+}
+
+/**----------------------------------**/
+
+
+.middle-container{
+    border: #000 0px SOLID;
+    height: 100vh; 
+    width: 85.2%;
+    float: right;
+    background-color: transparent;
+}
+
+.middle-container .story-container::-webkit-scrollbar {
+    width: 100px;
+  }
+  
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.middle-container .story-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.middle-container .all-main{
+    margin-left: 15%;
+
+}
+
+.middle-container .story-container{
+    display:flex;
+    gap: 10PX;
+    width: 50%;
+    height: 12vh;
+    margin-top: 10PX;
+    overflow: hidden;
+    overflow-X: scroll;
+    background-color: transparent;
+    border: 0px solid black;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scroll-behavior: smooth;
+    scrollbar-width: none;  /* Firefox */
+}
+
+.middle-container .story-container .msg-story{
+    position: absolute;
+    font-size: 9px;
+    left: 205px;
+    top: 30px;
+}
+
+.middle-container .story-container .arrow-story{
+    position: absolute;
+    top: 23px;
+    padding: 5px;
+    scroll-behavior: smooth;
+}
+
+.middle-container .story-container .arrow-story button{
+    border-radius: 50%;
+    border: 1px solid rgb(219, 219, 219);
+
+}
+
+.left-arrow-story{
+    transform: translateX(-35px);
+
+}
+
+.right-arrow-story{
+    right: 455px;
+
+}
+
+
+.middle-container .story-container .group{
+    max-height: 20PX;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.middle-container .story-container .group img{
+    border-radius: 50%;
+    padding: 2px;
+    border: 1.99999994px solid #f90000;
+}
+
+.second_user_name{
+    COLOR: grey;
+}
+
+.circle-img-width-height{
+    width: 46px;
+    height: 46px;
+}
+
+.middle-container .story-container .group:nth-child(2) img{
+    border: 1.99999994px solid green;
+}
+
+.middle-container .story-container .group:nth-child(4) img{
+    border: 1.99999994px solid green;
+}
+
+.middle-container .story-container .group:nth-child(6) img{
+    border: 1.99999994px solid green;
+}
+
+.middle-container .story-container .group:nth-child(8) img{
+    border: 1.99999994px solid green;
+}
+
+.middle-container .story-container .group:nth-child(10) img{
+    border: 1.99999994px solid green;
+}
+
+.middle-container .story-container .group:nth-child(12) img{
+    border: 1.99999994px solid green;
+}
+
+.middle-container .story-container .group:nth-child(14) img{
+    border: 1.99999994px solid green;
+}
+
+.middle-container .story-container .group:nth-child(16) img{
+    border: 1.99999994px solid green;
+}
+
+/*
+.middle-container .story-container .group:nth-child(18) img{
+    border: 1.99999994px solid green;
+}
+*/
+
+.middle-container .story-container .group:nth-child(19) img{
+    border: 1.99999994px solid #23222240;
+}
+
+.middle-container .story-container .group:nth-child(20) img{
+    border: 1.99999994px solid #23222240;
+}
+
+.middle-container .story-container .group:nth-child(21) img{
+    border: 1.99999994px solid #23222240;
+}
+
+.middle-container .story-container .group #story-user-name{
+    font-size: 8px;
+}
+
+
+
+/*     Main content         */
+
+.main-content{
+    float: left;    
+    background-color: transparent;
+    height: 100vh;
+    width: 50%;
+    border: #000 1px solid;
+
+}
+
+
+
+/*     right section       */
+
+.right-section {
+    background-color: transparent;
+    border: #000 1px solid;
+    height: 70vh;
+    width: 20%;
+    position: absolute;
+    right: 150px;
+    top: 10px;
+    z-index: 444;
+   /*   overflow: hidden;  */
+}
+
+.right-section .head-rs{
+    padding: 10px 0 5px 15px;
+    display: flex;
+    cursor:pointer;
+}
+
+.right-section .head-rs img{
+    padding: 1px;
+    border: 2px solid #23222240;
+}
+
+.right-section .head-rs .user-name{
+    font-size: 11px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    z-index: 444;
+
+}
+
+.right-section .head-rs .button{
+    width: 50%;
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 20PX;
+    font-size: 11px;
+}
+
+.right-section .head-rs .button a{
+    color: rgba(0, 175, 249);
+}
+.right-section .head-rs .button a:hover{
+    color: black;
+}
+
+
+.right-section .main-rs{
+    margin-left: 15px;
+    font-size: 9px;
+    margin-right: 15px;
+}
+
+.right-section .main-rs .group-rs{
+    background-color: transparent;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    padding: 5px;
+}
+
+
+.right-section .main-rs .group-rs .login-button-story{
+    width: 25%;
+    font-size: 12px;
+    transform: scale(0.8) translateX(65px) translateY(-12px);
+}
+
+.right-section .main-rs .group-rs p{
+    padding-left: 10px;
+}
+
+
+.circle-img-width-height-smoll {
+    width: auto;
+    height: 35px;
+}
