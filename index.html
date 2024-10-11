@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Instagram </title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/">
+    <link rel="icon" type="imege/x-icon" href="images/logo/insta-logo-colorful-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src=""></script>
+
+</head>
+<body>
+    
+
+    <header>
+
+        <div class="all-container">
+
+            <div class="left-container">
+
+               <div class="head-icon">
+                    <a href="index.html" title="instagram">
+                        <img src="images/logo/insta-name-logo-black.png" width="75" id="Instagram-Name-Black"  alt="Instagram-Name" >
+                    </a>
+               </div>
+                
+                <div class="left-main-content" id="left-main-content">
+
+                    <a href="index.html" id="active-page" title="Home">
+                        <li>
+                          <img src="images/icon-bar/home-icon-black.png " id="home-icon" alt="home-icon">
+	                        <span id="OptionId">
+                                Home
+                            </span>
+                        </li>
+                    </a>
+
+                    <a href="#"  title="Serach" onclick="SerachOnClick(); left()">
+                        <li id="action-icon" onclick="myFUNCTION()">
+                            <img src="images/icon-bar/Serach-icon.png" id="Serach-icon" alt="Serach-ico">
+                            <span id="OptionId">
+                                Serach
+                            </span>
+                        </li>
+                    </a>
+                    
+                        <div id="Serach-container" style="display: none;">
+                            <div class="head">
+                                <h4>
+                                    Serach
+                                </h4>
+                                <i class="fa-solid fa-magnifying-glass" style="color: #d2cbcb;"></i>
+                                <input type="search" id="Serach-input" placeholder="Serach" >
+                            </div>
+                            <div class="main">
+                                <span style="padding-left: 20px;">
+                                    Recent
+                                </span>
+                                <span>
+                                    <a href="#" style="float: right;" id="Clear-all"
+                                    onclick="ClearAll()">
+                                        Clear all
+                                    </a>
+                                </span>
+                                <br><br> 
+                                <div id="profile-container">
+                                    <div class="option-profile" id="first">
+                                        <a href="#">
+                                            <img src="accounts/user-img/user - raza_bagwan.jpg" style="width: 30%;" id="User-ico">
+                                            <div class="content">
+                                                <p>
+                                                    raza_dx_302
+                                                </p>
+                                                <p  style="color:grey;">
+                                                    رضا بگوان
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" onclick="document.getElementById('first').style.display ='none';">
+                                            <i class="fa-solid fa-xmark fa-2xl"
+                                            style="color: #000000b8; position: relative;left: 99px;
+                                            top: 12px;"></i>
+                                        </a>
+                                    </div>
+    
+                                    <div class="option-profile" id="second">
+                                        <a href="#">
+                                            <img src="accounts/user-img/user - mubin_bagwan.jpg" id="User-ico">
+                                            <div class="content">
+                                                <p>
+                                                    mubin_bagwan_886
+                                                </p>
+                                                <p  style="color:grey;">
+                                                    Bagwan Mubin
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" onclick="document.getElementById('second').style.display ='none';">
+                                            <i class="fa-solid fa-xmark fa-2xl"
+                                            style="color: #000000b8; position: relative;left: 99px;
+                                            top: 12px;"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="option-profile" id="third">
+                                        <a href="#">
+                                            <img src="/accounts/user-img/user - tannu_shaikh.jpg" id="User-ico">
+                                            <div class="content">
+                                                <p>
+                                                    tanvirshaikh_
+                                                </p>
+                                                <p  style="color:grey;">
+                                                    tannu
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" onclick="document.getElementById('third').style.display ='none';">
+                                            <i class="fa-solid fa-xmark fa-2xl"
+                                            style="color: #000000b8; position: relative;left: 99px;
+                                            top: 12px;"></i>
+                                        </a>
+                                    </div>
+    
+                                    <div class="option-profile" id="fourth">
+                                        <a href="#">
+                                            <img src="/accounts/user-img/user - moin_bagwan.jpg" id="User-ico">
+                                            <div class="content">
+                                                <p>
+                                                    dx_moin_mh_19
+                                                </p>
+                                                <p  style="color:grey;">
+                                                    Bagwan Moin
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" onclick="document.getElementById('fourth').style.display ='none';">
+                                            <i class="fa-solid fa-xmark fa-2xl"
+                                            style="color: #000000b8; position: relative;left: 99px;
+                                            top: 12px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <a href="#" title="Explore">
+                        <li>
+                            <img src="images/icon-bar/explore-icon.png" alt="explore-icon">
+                            <span id="OptionId">
+                                Explore
+                            </span>
+                        </li>
+                    </a>
+
+                    <a href="#" title="Reels">
+                        <li>
+                            <img src="images/icon-bar/reels-icon.png" alt="reels-icon">
+                            <span id="OptionId">
+                                Reels
+                            </span>
+                        </li>
+                    </a>
+
+                    <a href="#" title="Messages">
+                        <li>
+                            <img src="images/icon-bar/msg-icon.png" alt="msg-icon" id="msg-icon">
+                            <span id="OptionId">
+                                Messages
+                            </span>
+                            <h5 id="msg-caunt">
+                                3 
+                            </h5>
+                        </li>
+                    </a>
+
+                    <a href="#" id="Notification" title="Notification" onclick="NotificationOnClick()">
+                        <li>
+                            <img src="images/icon-bar/heart-icon.png" id="heart-icon" alt="heart-icon">
+                            <span id="OptionId">
+                                Notification
+                            </span>
+                            <h5 id="noti-caunt"></h5>
+                        </li>
+                    </a>
+
+                        <div id="Notification-Container" style="display: none;">
+                            <h3>
+                                Notification
+                            </h3>
+
+                            <div class="head">
+
+                            </div>
+
+                            <div class="main">
+
+                            </div>
+                        </div>
+                    
+                    <a href="" title="Create">
+                        <li>
+                            <img src="images/icon-bar/create-icon.png" id="create-icon" alt="create-icon">
+                            <span id="OptionId">
+                                Create
+                            </span>
+                        </li>
+                    </a>
+
+                    <a href="" title="Profile">
+                        <li>
+                            <img src="accounts/user-img/user - raza_bagwan.jpg" alt="raza_dx_302" id="User-icon">
+                            <span id="OptionId">
+                                Profile
+                            </span>
+                        </li>
+                    </a>
+
+                    <div class="btm" style="transform: translateY(100PX);">
+                        <a href="" title="Threads"  id="threads-left-container">
+                            <li>
+                                <img src="images/icon-bar/Threads-icon.png" alt="Threads-icon"  style="transform: scale(1.8);">
+                                <span id="OptionId">
+                                    Threads
+                                </span>
+                            </li>
+                        </a>
+    
+                        <a href="#" title="More" onclick="MoreOnClick()" id="more-option">
+                            <li>
+                                <img src="images/icon-bar/more-icon.png" id="more-icon" alt="more-icon">
+                                <span id="OptionId">
+                                    More
+                                </span>
+                            </li>
+                        </a>
+                    </div>
+
+                    <div id="More-Container" style="display: none;">
+                        <div class="head">
+
+                            <a href="#">
+                                <li>
+                                    <i class="fa-regular fa-sun" style="color: #000000;"></i>
+                                    <span>
+                                            Settings
+                                    </span>
+                                </li>
+                            </a>
+
+                            <a href="#">
+                                <li>
+                                    <i class="fa-solid fa-chart-line" style="color: #000000;"></i>
+                                    <span>
+                                        Your activity
+                                    </span>
+                                </li>
+                            </a>
+
+                            <a href="#">
+                                <li>
+                                    <i class="fa-regular fa-bookmark" style="color: #000000;"></i>
+                                    <span>
+                                        Saved
+                                    </span>
+                                </li>
+                            </a>
+
+                            <a href="#">
+                                <li>
+                                    <i class="fa-regular fa-moon" style="color: #000000;"></i>
+                                    <span>
+                                        Switch appearance
+                                    </span>
+                                </li>
+                            </a>
+
+                            <a href="#">
+                                <li>
+                                    <i class="fa-solid fa-triangle-exclamation" style="color: #000000;"></i>
+                                    <span>
+                                        Report a problem
+                                    </span>
+                                </li>
+                            </a>
+
+                            <hr size="0" style="color: rgb(219, 219, 219); margin: 5px 0 5px 0; position: relative;left: -5px;">
+
+                            <div class="main">
+                                    
+
+                                <a href="#" onclick="document.getElementById('accounts-switch-conatiner').style.display='block';">
+                                    <li>
+                                        <span>
+                                            Switch accounts
+                                        </span>
+                                    </li>
+                                </a>
+
+                                <a href="#" onclick="document.getElementById('container-log-out').style.display='block';">
+                                    <li>
+                                        <span>
+                                            Log out
+                                        </span>
+                                    </li>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            
+                <!--
+                        Switch Accounts Option
+                -->
+
+                <div class="container-account-switch" id="accounts-switch-conatiner"  style="display: none;">
+                    <div id="switch-accounts">
+                        <div class="head">
+                            <center>
+                                <span>Switch accounts</span>
+                            </center>
+                            <i onclick="document.getElementById('accounts-switch-conatiner').style.display='none';" 
+                            class="fa-solid fa-xmark cancel" style="color: #000000;float: right;"></i>
+                        </div>
+    
+                        <div  class="main">
+                            <div class="content" id="active-account-stc-acc">
+                                <img src="accounts/user-img/user - raza_bagwan.jpg" alt="" width="60"
+                                style="margin-left: 5px; margin-top: 5px;" id="accounts-img" srcset="">
+                                <span id="text">
+                                    raza_dx_302
+                                    <i class="fa-solid fa-circle-check fa-xl" style="color: #000000;"></i>
+                                </span>
+                            </div> 
+    
+                            <div class="content" id="stc-acco-opt-second" >
+                            <img src="accounts/user-img/user - mubin_bagwan.jpg" alt="" width="60"
+                            style="margin-left: 5px; margin-top: 5px;" id="accounts-img" srcset="">
+                            <span id="text">
+                                mubin_bagwan
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                    <!--
+                            Container-log-out
+                    -->
+    
+                <div class="container-log-out" id="container-log-out" style="display: none;">
+                    <div id="log-out">
+                        <div class="head">
+                            <Br>
+                            <span id="Logging-out">
+                                Logging Out
+                            </span>
+                            <br>
+                            <span id="log-back-in">
+                                You need to log back in.
+                            </span>
+                        </div>
+                        
+                        <div class="main">
+                           <a  href="index-login.html">
+                                <button>
+                                    Log in
+                                </button>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+        </div>
+    
+    </header>
+        
+    <main class="middle-container">
+
+        <div class="all-main">
+            
+            <div class="story-container">
+
+                <p class="msg-story">
+                    Click Shift + mouse <br> scroll left , right
+                </p>
+
+                <a href="#first-story" class="arrow-story left-arrow-story">
+                    <button>
+                        <i class="fa-solid fa-chevron-left fa-2xs" ></i>
+                    </button>
+                </a>
+                <a href="#last-story" class="arrow-story right-arrow-story">
+                    <button>
+                        <i class="fa-solid fa-chevron-right fa-2xs" ></i>
+                    </button>
+                </a>
+
+                <div class="group" id="first-story">
+                    <img src="accounts/user-img/user - raza_bagwan.jpg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        <span id="user_id_raza"></span>
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/user - mubin_bagwan.jpg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        <span></span> <!--CONNECT ON JAVA SCRIPT-->
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/user - moin_bagwan.jpg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/user - tannu_shaikh.jpg" class="circle-img-width-height"class="circle-img-width-height"  width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/user - ahmad_baig.jpg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/user - gani_bagwan.jpg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/user - golu_bagwan.jpg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/user - techno_raza.jpg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+                
+                <div class="group">
+                    <img src="accounts/user-img/google icon no.1.jpeg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/google icon no.2" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group">
+                    <a href="#">
+                    <img src="accounts/user-img/google icon no.3.jpeg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                    </a>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/google icon no.4.jpg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+             
+                <div class="group">
+                    <img src="accounts/user-img/google icon no.5.jpg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/google icon no.6.jpeg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+                
+
+                <div class="group">
+                    <img src="accounts/user-img/google icon no.7.jpeg"class="circle-img-width-height"  width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/google icon no.8.jpeg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group">
+                    <img src="accounts/user-img/google icon no.9.jpeg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+                <div class="group" id="last-story">
+                    <img src="accounts/user-img/google icon no.10.jpeg" class="circle-img-width-height" width="46" alt="">
+                    <p id="story-user-name">
+                        
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="main-content"></div>
+
+            <div class="right-section">
+                <div class="head-rs">
+                    <img src="accounts/user-img/user - raza_bagwan.jpg" class="circle-img-width-height" width="34" id="User-icon" alt="">
+                    <p class="user-name">
+                        raza_dx_302
+                        <br>
+                        <span class="second_user_name">
+                            رضا بگوان
+                        </span>
+                    </p>
+
+                    <div class="button">
+                        <a href="#" id="switch">
+                            switch
+                        </a>
+                    </div>
+                </div>
+                <div class="main-rs">
+
+                    <div class="group-rs">
+                        <img src="accounts/user-img/google icon no.10.jpeg" class="circle-img-width-height-smollt" width="35" id="User-icon" alt="">
+                        <p class="user-name">
+                            ayan_khan_01
+                            <br>
+                           <span class="second_user_name">
+                                ayan khan
+                           </span>
+                        </p>
+                        <button onclick="sample()" id="Follow-button" class="login-button login-button-story">
+                            Follow
+                        </button>
+                    </div>
+
+                    <div class="group-rs">
+                        <img src="accounts/user-img/user - ahmad_baig.jpg" class="circle-img-width-height-smoll" width="38" id="User-icon" alt="">
+                            <p class="user-name">
+                               _amux01_
+                            <br>
+                            <span class="second_user_name">
+                               ahmad_baig 
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="group-rs">
+                        <img src="accounts/user-img/user - gani_bagwan.jpg" class="circle-img-width-height-smoll" width="38" id="User-icon" alt="">
+                        <p class="user-name">
+                               gani__01
+                            <br>
+                            <span class="second_user_name">
+                                gani_bagwan
+                            </span>
+                        </p>
+                    </div>
+
+                    
+                    <div class="group-rs">
+                        <img src="accounts/user-img/user - tannu_shaikh.jpg" class="circle-img-width-height-smoll" width="38" id="User-icon" alt="">
+                            <p class="user-name">
+                               tannu_shaikh
+                            <br>
+                            <span class="second_user_name">
+                               tannu 
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="group-rs">
+                        <img src="accounts/user-img/user - mubin_bagwan.jpg" class="circle-img-width-height-smoll" width="38" id="User-icon" alt="">
+                        <p class="user-name">
+                               mubin_bagwan_886
+                            <br>
+                            <span class="second_user_name">
+                                mubin_bagwan
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <div class="group-rs">
+                        <img src="accounts/user-img/user - golu_bagwan.jpg" class="circle-img-width-height-smoll" width="38" id="User-icon" alt="">
+                        <p class="user-name">
+                                golu__01
+                            <br>
+                            <span class="second_user_name">
+                                golu_bagwan
+                            </span>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
